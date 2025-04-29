@@ -6,7 +6,7 @@
         <div class="row align-items-start">
           <div class="col">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="title," name="search" value={{ $search }}>
+                <input type="text" class="form-control" placeholder="title, destination_url, url_key, default_short_url" name="search" value={{ $search }}>
             </div>
           </div>
           <div class="col">
