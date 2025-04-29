@@ -51,6 +51,6 @@ class User extends Authenticatable
      */
     public function shortUrls(): HasMany
     {
-        return $this->hasMany(shortUrl::class);
+        return $this->hasMany(ShortUrl::class);
     }
 }
