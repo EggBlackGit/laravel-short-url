@@ -33,12 +33,12 @@ class ShortUrlController extends Controller
             'shortUrls' => $shortUrls,
         ];
 
-        return view('user\home')->with($params);
+        return view('user.home')->with($params);
     }
 
     public function viewCreate()
     {
-        return view('user\createShortUrl');
+        return view('user.createShortUrl');
         // return redirect(route('shortUrl.view.create'));
     }
 
@@ -77,7 +77,7 @@ class ShortUrlController extends Controller
         $params = [
             'shortUrl' => $shortUrl,
         ];
-        return view('user\updateShortUrl')->with($params);
+        return view('user.updateShortUrl')->with($params);
     }
 
     public function update(Request $request, $id){

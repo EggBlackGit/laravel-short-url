@@ -47,7 +47,7 @@ class AdminController extends Controller
             'users' => $users,
             'searchUserId' => $request->searchUserId
         ];
-        return view('admin\adminHome', $params);
+        return view('admin.adminHome', $params);
     }
 
     public function viewUpdate($id){
@@ -56,7 +56,7 @@ class AdminController extends Controller
         $params = [
             'shortUrl' => $shortUrl,
         ];
-        return view('admin\adminUpdate')->with($params);
+        return view('admin.adminUpdate')->with($params);
     }
 
     public function update(Request $request, $id){
