@@ -27,7 +27,7 @@
         </div>
     </form>
 
-    <div class="card">
+    <div class="card" style="width: max-content">
         <table class="table table-hover">
             <thead>
                 <tr>
