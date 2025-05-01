@@ -32,6 +32,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">title</th>
                     <th scope="col">destination_url</th>
                     <th scope="col">url_key</th>
                     <th scope="col">default_short_url</th>
@@ -47,6 +48,7 @@
                 <tbody>
                     <tr>
                         <th scope="row">{{ $shortUrl->id }}</th>
+                        <td>{{ $shortUrl->title }}</td>
                         <td id="destination_url_{{ $shortUrl->id }}">{{$shortUrl->limitUrl(30)}}</td>
                         <td>{{ $shortUrl->url_key }}</td>
                         <td>{{ $shortUrl->default_short_url }}</td>
