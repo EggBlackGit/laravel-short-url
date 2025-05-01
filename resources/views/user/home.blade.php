@@ -23,7 +23,7 @@
                         </svg>
                     </a>
                     <h5 class="card-title"><B>title: {{ $shortUrl->title }}</B></h5>
-                    <p class="card-text">destination_url: {{ $shortUrl->destination_url }}</p>
+                    <p class="card-text">destination_url: {{$shortUrl->limitUrl(30)}}</p>
                     <p class="card-text">short_url: {{ $shortUrl->default_short_url }}</p>
                     <p class="card-text">created_at: {{ $shortUrl->created_at }}</p>
                 </div>
